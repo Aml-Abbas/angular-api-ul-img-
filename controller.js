@@ -3,7 +3,7 @@ var app = angular.module('usersApp');
 app.controller('FirstController', ['$scope', '$http', function($scope, $http){
 
 $scope.showData= function(){
-    var url='http://jsonplaceholder.typicode.com/users';
+    var url='https://jsonplaceholder.typicode.com/users';
     $http.get(url)
     .then(function(users){
         
@@ -11,7 +11,7 @@ $scope.showData= function(){
     });
 };
 $scope.showDo= function(){
-    var url='http://jsonplaceholder.typicode.com/todos';
+    var url='https://jsonplaceholder.typicode.com/todos';
 
     $http.get(url)
     .then(function(todo){
