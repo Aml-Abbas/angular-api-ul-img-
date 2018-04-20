@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-12">
+<section>
+  
+<button ng-click="showData()">click for users</button>
+<button ng-click="showDo()">click for do</button>
+</section>
+</div>
+<div class="col-6">
+<div class="users" ng-repeat="x in users">
+<pre class="name"><span>Name is: </span>{{x.name}}</pre>
+<pre class="username"><span>Username is is: </span>{{x.username}}</pre>
+<pre class="email"><span>Email is: </span>{{x.email}}</pre>
+<pre class="phone"><span>Phone is: </span>{{x.phone}}</pre>
+</div>
+</div>
+
+<div class="col-6">
+    <div class="todo" ng-repeat="x in todo">
+    <pre class="id"><span>ID is: </span>{{x.id}}</pre>
+    <pre class="title"><span>Title is: </span>{{x.title}}</pre>
+    </div>
+</div>
+</div>
